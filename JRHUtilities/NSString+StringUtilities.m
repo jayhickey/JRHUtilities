@@ -8,6 +8,7 @@
 
 #import "NSString+StringUtilities.h"
 #import <CommonCrypto/CommonDigest.h>
+#import <sys/utsname.h>
 
 @implementation NSString (StringUtilities)
 
@@ -69,6 +70,13 @@
 {
     NSDictionary *infoDictionary = [[NSBundle mainBundle] infoDictionary];
    return [infoDictionary objectForKey:@"CFBundleVersion"];
+}
+
++ (NSString *)feedbackEmailTemplate
+{
+    struct utsname systemInfo;
+    uname(&systemInfo);
+    return [NSString stringWithFormat:@"<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><hr><center>Developer Support Information</center><br><BLOCKQUOTE><li>Device: %@<br><li>iOS: %@<br><li>Version: %@ (%@)</BLOCKQUOTE><br><br>", [NSString stringWithCString:systemInfo.machine encoding:NSUTF8StringEncoding], [[UIDevice currentDevice] systemVersion], [NSString appVersion], [NSString appBuildNumber]];
 }
 
 @end

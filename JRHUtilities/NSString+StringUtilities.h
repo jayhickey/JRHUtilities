@@ -17,5 +17,6 @@
 + (NSString *)diskUsage;
 + (NSString *)appVersion;
 + (NSString *)appBuildNumber;
++ (NSString *)feedbackEmailTemplate;
 
 @end
