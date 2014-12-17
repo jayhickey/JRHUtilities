@@ -18,16 +18,16 @@
     
     if (delta < 0) {
         int days = floor((double)delta/DAY);
-        return days >= -1 ? @"Tomorrow" : [NSString stringWithFormat:@"in %d days", abs(days)];
+        return days >= -1 ? @"tomorrow" : [NSString stringWithFormat:@"in %d days", abs(days)];
     }
     
     if (delta < 24 * HOUR)
     {
-        return @"Today";
+        return @"today";
     }
     if (delta < 48 * HOUR)
     {
-        return @"Yesterday";
+        return @"yesterday";
     }
     if (delta < 30 * DAY)
     {
