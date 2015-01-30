@@ -64,7 +64,7 @@
     NSCalendar *calendar = [NSCalendar currentCalendar];
     NSDateComponents *components = [NSDateComponents new];
     [components setWeekOfMonth:1];
-    NSDate *newDate = [calendar dateByAddingComponents:components toDate:[NSDate getLocalDate] options:0];
+    NSDate *newDate = [calendar dateByAddingComponents:components toDate:date options:0];
     NSDateComponents *componentsDay = [calendar components:NSCalendarUnitYear|NSCalendarUnitMonth|NSCalendarUnitWeekOfMonth|NSCalendarUnitWeekday fromDate:newDate];
     [componentsDay setWeekday:4];
     return [calendar dateFromComponents:componentsDay];
