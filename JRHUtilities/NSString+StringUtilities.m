@@ -38,16 +38,12 @@
     return [formatter stringFromDate:date];
 }
 
-+ (NSString *)regexOutHTMLJunk:(NSString *)string
++ (NSString *)fixHTMLAttributes:(NSString *)string
 {
-    if (string.length) {
-        // Remove any HTML junk from text
-        NSError *error = nil;
-        NSRegularExpression *regex = [NSRegularExpression regularExpressionWithPattern:@"&#?[a-zA-Z0-9z]+;" options:NSRegularExpressionCaseInsensitive error:&error];
-        
-        return [regex stringByReplacingMatchesInString:string options:0 range:NSMakeRange(0, [string length]) withTemplate:@" "];
-    }
-    return string;
+    return [[NSAttributedString alloc] initWithData:[_issue.issueDescription dataUsingEncoding:NSUTF8StringEncoding]
+                                                                            options:@{NSDocumentTypeDocumentAttribute: NSHTMLTextDocumentType, NSCharacterEncodingDocumentAttribute: [NSNumber numberWithInt:NSUTF8StringEncoding]}
+                                                                documentAttributes:nil
+                                                                             error:nil].string;
 }
 
 + (NSString *)diskUsage

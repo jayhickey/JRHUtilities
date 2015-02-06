@@ -13,7 +13,7 @@
 
 + (NSString *)getHashOfImage:(UIImage *)image;
 + (NSString *)localTimeZoneStringWithDate:(NSDate *)date;
-+ (NSString *)regexOutHTMLJunk:(NSString *)string;
++ (NSString *)fixHTMLAttributes:(NSString *)string;
 + (NSString *)diskUsage;
 + (NSString *)appVersion;
 + (NSString *)appBuildNumber;
