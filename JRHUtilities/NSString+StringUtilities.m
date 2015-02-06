@@ -40,10 +40,10 @@
 
 + (NSString *)fixHTMLAttributes:(NSString *)string
 {
-    return [[NSAttributedString alloc] initWithData:[_issue.issueDescription dataUsingEncoding:NSUTF8StringEncoding]
-                                                                            options:@{NSDocumentTypeDocumentAttribute: NSHTMLTextDocumentType, NSCharacterEncodingDocumentAttribute: [NSNumber numberWithInt:NSUTF8StringEncoding]}
-                                                                documentAttributes:nil
-                                                                             error:nil].string;
+    return [[NSAttributedString alloc] initWithData:[string dataUsingEncoding:NSUTF8StringEncoding]
+                                                                      options:@{NSDocumentTypeDocumentAttribute: NSHTMLTextDocumentType, NSCharacterEncodingDocumentAttribute: [NSNumber numberWithInt:NSUTF8StringEncoding]}
+                                                           documentAttributes:nil
+                                                                        error:nil].string;
 }
 
 + (NSString *)diskUsage
