@@ -46,11 +46,6 @@
     }
 }
 
-+ (NSDate *)getLocalDate
-{
-    return [NSDate dateWithTimeInterval:[[NSTimeZone systemTimeZone] secondsFromGMT] sinceDate:[NSDate date]];
-}
-
 + (NSDate *)getThisWednesdayOfDate:(NSDate *)date
 {
     NSCalendar *calendar = [NSCalendar currentCalendar];

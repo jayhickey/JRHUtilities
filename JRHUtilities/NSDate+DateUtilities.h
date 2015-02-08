@@ -17,7 +17,6 @@
 #define MONTH (30 * DAY)
 
 + (NSString *)fuzzyTimeBetweenStartDate:(NSDate *)startDate andEndDate:(NSDate *)endDate;
-+ (NSDate *)getLocalDate;
 + (NSDate *)getThisWednesdayOfDate:(NSDate *)date;
 + (NSDate *)getNextWednesdayOfDate:(NSDate *)date;
 
