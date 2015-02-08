@@ -46,12 +46,12 @@
     }
 }
 
-+ (NSDate *)getLocalDate
++ (NSDate *)localDate
 {
     return [NSDate dateWithTimeInterval:[[NSTimeZone systemTimeZone] secondsFromGMT] sinceDate:[NSDate date]];
 }
 
-+ (NSDate *)getThisWednesdayOfDate:(NSDate *)date
++ (NSDate *)thisWednesdayOfDate:(NSDate *)date
 {
     NSCalendar *calendar = [NSCalendar currentCalendar];
     NSDateComponents *componentsDay = [calendar components:NSCalendarUnitYear|NSCalendarUnitMonth|NSCalendarUnitWeekOfMonth|NSCalendarUnitWeekday fromDate:date];
@@ -59,7 +59,7 @@
     return [calendar dateFromComponents:componentsDay];
 }
 
-+ (NSDate *)getNextWednesdayOfDate:(NSDate *)date
++ (NSDate *)nextWednesdayOfDate:(NSDate *)date
 {
     NSCalendar *calendar = [NSCalendar currentCalendar];
     NSDateComponents *components = [NSDateComponents new];
