@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E5672DA51A9D489400D31823 /* UIColor+CustomColors.m in Sources */ = {isa = PBXBuildFile; fileRef = E5672DA41A9D489400D31823 /* UIColor+CustomColors.m */; };
 		E5ABCC0F1A3E4A280089195C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E5ABCC0E1A3E4A280089195C /* Foundation.framework */; };
 		E5ABCC111A3E4AE60089195C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E5ABCC101A3E4AE60089195C /* UIKit.framework */; };
 		E5B0159D1A3E525700A0FC83 /* NSData+Base64.m in Sources */ = {isa = PBXBuildFile; fileRef = E5B0158C1A3E525700A0FC83 /* NSData+Base64.m */; };
@@ -34,6 +35,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		E5672DA31A9D489400D31823 /* UIColor+CustomColors.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+CustomColors.h"; sourceTree = "<group>"; };
+		E5672DA41A9D489400D31823 /* UIColor+CustomColors.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+CustomColors.m"; sourceTree = "<group>"; };
 		E5ABCBD51A3E45FE0089195C /* libJRHUtilities.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libJRHUtilities.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		E5ABCC0E1A3E4A280089195C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		E5ABCC101A3E4AE60089195C /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
@@ -93,6 +96,8 @@
 		E5ABCBD71A3E45FE0089195C /* JRHUtilities */ = {
 			isa = PBXGroup;
 			children = (
+				E5672DA31A9D489400D31823 /* UIColor+CustomColors.h */,
+				E5672DA41A9D489400D31823 /* UIColor+CustomColors.m */,
 				E5D3422C1A897ED700C8C38B /* UIViewController+Utils.h */,
 				E5D3422D1A897ED700C8C38B /* UIViewController+Utils.m */,
 				E5B0158B1A3E525700A0FC83 /* NSData+Base64.h */,
@@ -182,6 +187,7 @@
 				E5B015A31A3E525700A0FC83 /* UIImage+CreateImage.m in Sources */,
 				E5B0159E1A3E525700A0FC83 /* NSDate+DateUtilities.m in Sources */,
 				E5D3422E1A897ED700C8C38B /* UIViewController+Utils.m in Sources */,
+				E5672DA51A9D489400D31823 /* UIColor+CustomColors.m in Sources */,
 				E5B015A01A3E525700A0FC83 /* NSString+StringUtilities.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
