@@ -46,6 +46,15 @@
                                                       error:nil] string];
 }
 
++ (NSString *)HTMLEncodeString:(NSString *)string
+{
+    return [[[[[string stringByReplacingOccurrencesOfString: @"&" withString: @"&amp;"]
+               stringByReplacingOccurrencesOfString: @"\"" withString: @"&quot;"]
+              stringByReplacingOccurrencesOfString: @"'" withString: @"&#39;"]
+             stringByReplacingOccurrencesOfString: @">" withString: @"&gt;"]
+            stringByReplacingOccurrencesOfString: @"<" withString: @"&lt;"];
+}
+
 + (NSString *)diskUsage
 {
     NSUInteger diskUsage = [NSURLCache sharedURLCache].currentDiskUsage;

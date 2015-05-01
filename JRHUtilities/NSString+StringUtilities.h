@@ -14,6 +14,7 @@
 + (NSString *)getHashOfImage:(UIImage *)image;
 + (NSString *)localTimeZoneStringWithDate:(NSDate *)date;
 + (NSString *)fixHTMLAttributes:(NSString *)string;
++ (NSString *)HTMLEncodeString:(NSString *)string;
 + (NSString *)diskUsage;
 + (NSString *)appVersion;
 + (NSString *)appBuildNumber;
