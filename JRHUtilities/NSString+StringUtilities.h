@@ -11,6 +11,7 @@
 
 @interface NSString (StringUtilities)
 
++ (NSString *)randomStringWithLength:(int)len;
 + (NSString *)getHashOfImage:(UIImage *)image;
 + (NSString *)localTimeZoneStringWithDate:(NSDate *)date;
 + (NSString *)fixHTMLAttributes:(NSString *)string;
