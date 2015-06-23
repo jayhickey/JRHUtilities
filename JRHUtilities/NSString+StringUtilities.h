@@ -16,6 +16,7 @@
 + (NSString *)localTimeZoneStringWithDate:(NSDate *)date;
 + (NSString *)fixHTMLAttributes:(NSString *)string;
 + (NSString *)HTMLEncodeString:(NSString *)string;
++ (NSString *)convertToMACAddress:(NSString *)string;
 + (NSString *)diskUsage;
 + (NSString *)appVersion;
 + (NSString *)appBuildNumber;

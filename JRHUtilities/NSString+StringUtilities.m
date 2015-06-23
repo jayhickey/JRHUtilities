@@ -68,6 +68,19 @@
             stringByReplacingOccurrencesOfString: @"<" withString: @"&lt;"];
 }
 
++ (NSString *)convertToMACAddress:(NSString *)string
+{
+    if (!string.length || [string containsString:@":"]) return string;
+    
+    NSMutableString *mutableAddress = [[NSMutableString alloc] initWithString:string];
+    int interval = 2;
+    for(int i = 0; i < 5 ; i++){
+        [mutableAddress insertString:@":" atIndex:(i == 0 ? interval : interval * (i + 1) + i )];
+    }
+    return [NSString stringWithString:mutableAddress];
+
+}
+
 + (NSString *)diskUsage
 {
     NSUInteger diskUsage = [NSURLCache sharedURLCache].currentDiskUsage;
@@ -87,7 +100,7 @@
 + (NSString *)appBuildNumber
 {
     NSDictionary *infoDictionary = [[NSBundle mainBundle] infoDictionary];
-   return [infoDictionary objectForKey:@"CFBundleVersion"];
+    return [infoDictionary objectForKey:@"CFBundleVersion"];
 }
 
 + (NSString *)feedbackEmailTemplate
