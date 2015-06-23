@@ -70,7 +70,7 @@
 
 + (NSString *)convertToMACAddress:(NSString *)string
 {
-    if (!string.length || [string containsString:@":"]) return string;
+    if ((string.length != 12) || [string containsString:@":"]) return string;
     
     NSMutableString *mutableAddress = [[NSMutableString alloc] initWithString:string];
     int interval = 2;
@@ -78,7 +78,6 @@
         [mutableAddress insertString:@":" atIndex:(i == 0 ? interval : interval * (i + 1) + i )];
     }
     return [NSString stringWithString:mutableAddress];
-
 }
 
 + (NSString *)diskUsage
