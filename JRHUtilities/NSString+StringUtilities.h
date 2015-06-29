@@ -14,12 +14,14 @@
 + (NSString *)randomStringWithLength:(int)len;
 + (NSString *)getHashOfImage:(UIImage *)image;
 + (NSString *)localTimeZoneStringWithDate:(NSDate *)date;
-+ (NSString *)fixHTMLAttributes:(NSString *)string;
 + (NSString *)HTMLEncodeString:(NSString *)string;
 + (NSString *)convertToMACAddress:(NSString *)string;
 + (NSString *)diskUsage;
 + (NSString *)appVersion;
 + (NSString *)appBuildNumber;
 + (NSString *)feedbackEmailTemplate;
+
+// Depreciated Methods
++ (NSString *)fixHTMLAttributes:(NSString *)string __deprecated_msg("This method is not thread-safe. Use https://github.com/mwaterfall/MWFeedParser instead");
 
 @end
