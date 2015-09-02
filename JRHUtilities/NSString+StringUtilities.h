@@ -19,7 +19,10 @@
 + (NSString *)diskUsage;
 + (NSString *)appVersion;
 + (NSString *)appBuildNumber;
+
+#ifndef WATCH
 + (NSString *)feedbackEmailTemplate;
+#endif
 
 // Depreciated Methods
 + (NSString *)fixHTMLAttributes:(NSString *)string __deprecated_msg("This method is not thread-safe. Use https://github.com/mwaterfall/MWFeedParser instead");
