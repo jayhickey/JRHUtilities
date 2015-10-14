@@ -63,6 +63,7 @@
 		E5D3422D1A897ED700C8C38B /* UIViewController+Utils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+Utils.m"; sourceTree = "<group>"; };
 		E5F4B23B1BCE9F430078B061 /* NSArray+ArrayUtilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+ArrayUtilities.h"; sourceTree = "<group>"; };
 		E5F4B23C1BCE9F430078B061 /* NSArray+ArrayUtilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+ArrayUtilities.m"; sourceTree = "<group>"; };
+		E5F4B2411BCEA0060078B061 /* JRHUtilities.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JRHUtilities.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +100,7 @@
 		E5ABCBD71A3E45FE0089195C /* JRHUtilities */ = {
 			isa = PBXGroup;
 			children = (
+				E5F4B2411BCEA0060078B061 /* JRHUtilities.h */,
 				E5672DA31A9D489400D31823 /* UIColor+CustomColors.h */,
 				E5672DA41A9D489400D31823 /* UIColor+CustomColors.m */,
 				E5D3422C1A897ED700C8C38B /* UIViewController+Utils.h */,
