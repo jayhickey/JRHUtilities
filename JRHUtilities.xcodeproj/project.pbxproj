@@ -20,6 +20,7 @@
 		E5B015A41A3E525700A0FC83 /* UIImage+DrawOnImage.m in Sources */ = {isa = PBXBuildFile; fileRef = E5B0159A1A3E525700A0FC83 /* UIImage+DrawOnImage.m */; };
 		E5B015A51A3E525700A0FC83 /* UIImage+ImageEffects.m in Sources */ = {isa = PBXBuildFile; fileRef = E5B0159C1A3E525700A0FC83 /* UIImage+ImageEffects.m */; };
 		E5D3422E1A897ED700C8C38B /* UIViewController+Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = E5D3422D1A897ED700C8C38B /* UIViewController+Utils.m */; };
+		E5F4B23D1BCE9F430078B061 /* NSArray+ArrayUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = E5F4B23C1BCE9F430078B061 /* NSArray+ArrayUtilities.m */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -60,6 +61,8 @@
 		E5B0159C1A3E525700A0FC83 /* UIImage+ImageEffects.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+ImageEffects.m"; sourceTree = "<group>"; };
 		E5D3422C1A897ED700C8C38B /* UIViewController+Utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+Utils.h"; sourceTree = "<group>"; };
 		E5D3422D1A897ED700C8C38B /* UIViewController+Utils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+Utils.m"; sourceTree = "<group>"; };
+		E5F4B23B1BCE9F430078B061 /* NSArray+ArrayUtilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+ArrayUtilities.h"; sourceTree = "<group>"; };
+		E5F4B23C1BCE9F430078B061 /* NSArray+ArrayUtilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+ArrayUtilities.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +105,8 @@
 				E5D3422D1A897ED700C8C38B /* UIViewController+Utils.m */,
 				E5B0158B1A3E525700A0FC83 /* NSData+Base64.h */,
 				E5B0158C1A3E525700A0FC83 /* NSData+Base64.m */,
+				E5F4B23B1BCE9F430078B061 /* NSArray+ArrayUtilities.h */,
+				E5F4B23C1BCE9F430078B061 /* NSArray+ArrayUtilities.m */,
 				E5B0158D1A3E525700A0FC83 /* NSDate+DateUtilities.h */,
 				E5B0158E1A3E525700A0FC83 /* NSDate+DateUtilities.m */,
 				E5B0158F1A3E525700A0FC83 /* NSMutableArray+Randomize.h */,
@@ -187,6 +192,7 @@
 				E5B015A31A3E525700A0FC83 /* UIImage+CreateImage.m in Sources */,
 				E5B0159E1A3E525700A0FC83 /* NSDate+DateUtilities.m in Sources */,
 				E5D3422E1A897ED700C8C38B /* UIViewController+Utils.m in Sources */,
+				E5F4B23D1BCE9F430078B061 /* NSArray+ArrayUtilities.m in Sources */,
 				E5672DA51A9D489400D31823 /* UIColor+CustomColors.m in Sources */,
 				E5B015A01A3E525700A0FC83 /* NSString+StringUtilities.m in Sources */,
 			);
